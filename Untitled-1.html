@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>表单</title>
+        <style>
+            .toplist{
+                color: red;
+                 font-size: 20px;
+            }
+            .list{
+                width: 480px;
+                height: 30px;
+            }
+            .list1{
+                width: 480px;
+                height: 30px;
+                background-color:grey;
+                margin-top: 20px;
+                margin-bottom: 10px;
+
+            }
+            .words{
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            span{
+                color: red;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>学生信息</h1>
+        <div>
+            <form>
+                <fieldset style="width: 500px;">
+                <legend class="toplist">学生档案</legend>
+                <div class="words">姓名：</div>
+                <input type="text" name="name" required="required" placeholder="请输入姓名" class="list" ><span> * </span><br/>
+                <div class="words">学号：</div>
+                <input type="text" name="id" required="required" placeholder="请输入学号" class="list"><span> * </span><br/>
+                <div class="words">手机号码：</div>
+                <input type="tel" name="phone" required="required" placeholder="请输入手机号" class="list"><span> * </span><br/>
+                <div class="words">邮箱地址：</div>
+                <input type="email" name="email" required="required" placeholder="请输入邮箱地址" class="list"><span> * </span><br/>
+                <div class="words">录取学校：</div>
+                <input type="search" name="school" class="list" list="university"><br/>
+                <datalist id="university">
+                    <option>河北师范大学</option>
+                    <option>河北科技大学</option>
+                    <option>河北工业大学</option>
+                </datalist>
+                <div class="words">入学成绩：</div>
+                <input type="text" name="score" class="list"><br/>
+                <div class="words">入学时间：</div>
+                <input type="date" name="date" class="list"><br/>
+                <input type="submit" name="submit" value="提交" class="list1">
+            </fieldset>
+            </form>
+        </div>
+    </body>
+<html>
